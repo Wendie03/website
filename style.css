@@ -1,0 +1,13 @@
+li{
+    list-style-type: none;
+    display:inline-block;
+    padding:5px;
+    text-align:left;
+}
+#nav{
+    background-color: #f1f1f1;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding:5px;
+    margin:5px;
+}
