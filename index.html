@@ -7,38 +7,303 @@
     <title>Wendy's portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="media.css"/>
+    <script src="file.js"></script>
 </head>
 <body>
-    <header class="header"></header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="contact.html">Contact us</a></li>
+    <nav id="main-nav">
+        <div class="logo">Wendy Mukami</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#companies">Companies</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Wendy Mukami</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#companies" onclick="toggleMenu()">Companies</a></li>
+                <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic">
+            <img src="Image_1690747316249.jpg" alt="Wendy's profile" id="image" height="300px" width="400px">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Wendy Mukami</h1>
+            <p class="section_text_p2">Frontend developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open()">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Me</button>
+            </div>
+            <div id="socials">
+                <img src="linked-in-2668696_960_720.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'"/>
+                <img src="GitHub-Mark.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/'"/>
+            </div>
+        </div>
+    </section>   
+    <section id="about">
+        <p class="section_text_p1">Get to know</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="text-container">
+                        <p>I started my journey as a freelance web developer over 2 years ago.I have done remote work for agencies, consulted for startups, and collaborated with talented people to create digital websites for both business and consumer use. I have also creatde some personal projects and websites that are available in my GitHub account.</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="testing-icon-png-1.jpg" alt="Experience" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br> Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="21195.png" alt="Education" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Sc. Computer Science <br> M.Sc Software development</p>
+                    </div>
+                </div>
+            </div>
+            <img src="2985149.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section_text_p1" id="p1">This is My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                   <h2 class="experience-subtitle">Frontend development</h2>
+                   <div class="article-container">
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>React</h3>
+                            <p>Basic</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>Material UI</h3>
+                            <p>Intermediate</p>
+                        </div>
+                      </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                   <h2 class="experience-subtitle">Backend development</h2>
+                   <div class="article-container">
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Basic</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>Express JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img src="png-transparent-check-mark-symbol-svg-miscellaneous-cdr-angle.png" alt="experience-icon" class="icon"/>
+                        <div>
+                            <h3>Git</h3>
+                            <p>Experienced</p>
+                        </div>
+                      </article>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <img src="2985149.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1" id="p2">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container"> 
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-element">
+                    <img src="0e0314_856bdf8b5611413aad5e1f2559656d2f~mv2.png" alt="project1" class="project-img1" height="210%" width="105%"/>
+                </div>
+                <h2 class="experience-subtitle project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-element">
+                    <img src="01_porto.jpg" alt="project2" class="project-img2" height="90%" width="90%"/>
+                </div>
+                <h2 class="experience-subtitle project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-element">
+                    <img src="bistro-3.jpg" alt="project3" class="project-img3" height="65%" width="65%"/>
+                </div>
+                <h2 class="experience-subtitle project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <img src="2985149.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#companies'"/>
+    </section>
+    <section id="companies">
+        <p class="section_text_p1" id="p1">I have worked with these</p>
+        <h1 class="title">Companies</h1>
+        <div class="experience-subtitle companies-title">
+            <div class="about-containers">
+                <div class="details-container comp-container">
+                    <img src="01cada77a0a7d326d85b7969fe26a728.jpg" alt="Company1" class="icon comp">
+                    <img src="Ebay-Logo-1.png" alt="Company2" class="icon comp">
+                    <img src="SAF-MAIN-LOGO.png" alt="Company3" class="icon comp"><br><br>
+                    <img src="logo.879e78bc92c159fe77f0.png" alt="Company4" class="icon comp">
+                    <img src="Jumia-Logo.png" alt="Company5" class="icon comp">
+                    <img src="Google-Logo-2015-present.jpg" alt="Company6" class="icon comp">
+                </div>
+            </div>
+        </div>
+        <img src="2985149.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#testimonials'"/>
+    </section>
+    <section id="testimonials">
+        <p class="section_text_p1" id="p1">Below are some</p>
+        <h1 class="title">Testimonials</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle testimonial-title">Review one</h2>
+                    <div class="article-element">
+                        <img src="man-character-face-avatar-glasses-260nw-562077406.jpg" alt="review1" class="review-img" height="50%">
+                    </div>
+                    <div class="reviews-container">
+                        <p>Wendy was a real pleasure to work with. She is creative, professional and delivers on time. We look forward to working together again.</p><br><br>
+                        <h3>Owen White</h3>
+                        <p>Creative Lead, Google</p>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle testimonial-title">Review two</h2>
+                    <div class="article-element">
+                        <img src="face-happy-girl-avatar-laughing-260nw-1459862774.jpg" alt="review2" class="review-img">
+                    </div>
+                    <div class="reviews-container">
+                        <p>Wendy is a super talented creative and developer. We trusted her with our project and you can too. You will not regret.</p><br><br>
+                        <h3>Wendy Kimani</h3>
+                        <p>Software project manager, Safaricom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="2985149.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1" id="p3">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="41-415678_email-icon-vector-circle.png" alt="email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:examplemail@gmail.com">wmukami@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="linked-in-2668696_960_720.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="instagram-icon_488108-3.jpg" alt="instagram-icon_488108-3 icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">Instagram</a></p><br><br>
+            </div>
+            <div class="contact-info-container">
+                <img src="2044px-WhatsApp.svg.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">Whatsapp</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="124021.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">Twitter</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="linked-in-2668696_960_720.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#companies">Companies</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-    <div class="home">
-        <div class="content">
-            <h3>Hello, I am</h3>
-            <h1>Wendy Mukami</h1>
-            <h3>And I'm a</h3>
-            <p>I'm a web designer with 2-year experience.<br>
-            My expertise is to create and design websites<br>
-             both front end and backend designs.</p>
-        </div>
-    </div>   
-        
-        
-        
-        
-        <div class="content">
-            <div class="content left"></div>
-            <div class="main content"></div>
-            <div class="content right"></div>
-        </div>
-        <div class="footer">
-            <p>Copy right &copy; 2020</p>
-        </div>
+        <p>Copyright &#169; 2023 Wendy Mukami. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

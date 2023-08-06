@@ -1,8 +1,6 @@
-function validateForm(){
-    let x=document.forms["myForm"]
-    ["fname"].value;
-    if (x==""){
-        alert("Name must be filled out");
-        return false;
-    }
+function toggleMenu(){
+    const menu=document.querySelector(".menu-links");
+    const icon=document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
 }

@@ -1,0 +1,57 @@
+@media screen and (max-width:1000px){
+    #profile{
+        height:83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers{
+        flex-wrap:wrap;
+    }
+}
+@media screen and (max-width:1000px){
+    #main-nav{
+        display:none;
+    }
+    #hamburger-nav{
+        display:flex;
+    }
+    #experience, .experience-details-container{
+        margin-top: 3rem;
+    }
+    #p1{
+        margin-top: 9rem;
+    }
+    #p2{
+        margin-top:3rem;
+    }
+    #p3{
+        margin-top:5rem;
+    }
+    #profile, .section-container{
+        display:block;
+    }
+    .arrow{
+        display:none;
+    }
+    section .section-container{
+        height:fit-content;
+    }
+    section{
+        margin:0 5%;
+    }
+    #experience{
+        margin-top:80%;
+        margin-bottom:80%;
+    }
+    #projects{
+        margin-top:230%;
+    }
+    #companies{
+        margin-top: 200%;
+    }
+    #contact{
+        margin-top: 110%;
+    }
+    footer{
+        margin-left: 50%;
+    }
+}
